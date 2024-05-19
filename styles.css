@@ -11,16 +11,42 @@ header {
     background: #FFF8DC; /* Cornsilk */
     color: #212121; /* Almost Black */
     padding: 1rem 1.5rem;
+    margin: 1.5rem;
     border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 {
-    margin: 1rem 1rem;
+header nav a {
+    color: #212121; /* Almost Black */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #212121; /* Almost Black */
+    border-radius: 5px;
+    background-color: #FFC107; /* Mustard Yellow */
+}
+
+header nav a:hover {
+    background-color: #FFA000; /* Dark Mustard */
+}
+
+#intro-content {
+    padding: 1.5rem;
+    margin: 1.5rem;
+    background: #ffffff; /* White */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#intro-content h1 {
+    margin: 1rem 0;
     font-size: 1.5rem;
 }
 
-header p {
-    margin: 1rem;
+#intro-content p {
+    margin: 1rem 0;
     font-size: 1rem;
 }
 
@@ -106,6 +132,20 @@ footer {
     flex-shrink: 0; /* Prevent cards from shrinking */
 }
 
+.card a {
+    text-decoration: none; /* Remove hyperlink styling */
+    color: inherit; /* Inherit text color */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card a:hover {
+    cursor: pointer; /* Change cursor on hover */
+}
+
 .card img {
     width: 100%;
     height: 60%; /* Adjust as needed */
@@ -121,6 +161,7 @@ footer {
 .card .content h3 {
     margin: 0;
     font-size: 16px;
+    color: #6A1B9A; /* Deep Purple */
 }
 
 .card .content .tags {
@@ -151,4 +192,20 @@ footer {
 .card .content .heart-icon img {
     width: 20px;
     height: 20px;
+}
+
+/* Additional styles for code snippet */
+pre {
+    white-space: pre-wrap; /* Allows text to wrap */
+    word-wrap: break-word; /* Breaks long words */
+    background-color: #FFF8DC; /* Cornsilk */
+    padding: 10px;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+code {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    color: #212121; /* Almost Black */
 }

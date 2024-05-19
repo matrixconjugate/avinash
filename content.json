@@ -7,12 +7,14 @@
     {
       "title": "Learning Buddy",
       "image": "media/plapp.jpeg",
+      "link": "learning_buddy.html",
       "tags": ["Gemini", "Apps Script"]
     },
     {
       "title": "This Portfolio",
       "image": "media/portfolio.jpeg",
-      "tags": ["JavaScript","GPT-4o"]
+      "link": "this_portfolio.html",
+      "tags": ["JavaScript", "GPT-4o"]
     }
   ],
   "skills": [

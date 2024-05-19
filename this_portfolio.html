@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portforlio Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load the navbar
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector('header').innerHTML = data;
+                });
+        });
+    </script>
+</head>
+<body>
+    <header></header>
+    <section id="intro-content">
+        <h1>This Portfolio Project</h1>
+        <p>
+            I have been struggling to put together a website because of logistics - I am not a dev/designer. I am a PM. PMs don't really work lol. Jokes apart, things like setting up a database, hosting the project, and making sure you have assets always led to delaying this project.
+        </p>
+        <p>
+            GPT-4o enters the chat (quite literally)!
+        </p>
+        <p>
+            I asked GPT-4o that I wanted to put a one pager on GitHub to showcase my projects, and that led to this!
+        </p>
+        <p>
+            There is a main index.html that references a bunch of content from content.json and other &lt;project&gt;.html files.
+        </p>
+        <p>
+            It took me 4 hours to put everything together, and I am amazed by GPT-4o's (and in general all other LLMs') performance and cost.
+        </p>
+    </section>
+    <section>
+        <h2>Pseudo Code Snippet</h2>
+        <pre>
+<code>
+// High-Level Pseudo Code for Portfolio Project
+
+// Step 1: Initialize project
+function initializeProject() {
+    // Setup project structure
+    // Prepare assets and content files
+}
+
+// Step 2: Create index.html
+function createIndexHtml() {
+    // Reference content from content.json
+    // Link to project-specific HTML files
+}
+
+// Step 3: Populate content from content.json
+function populateContent() {
+    // Fetch data from content.json
+    // Populate index.html and project pages with data
+}
+
+// Step 4: Setup hosting
+function setupHosting() {
+    // Choose a hosting platform (e.g., GitHub Pages)
+    // Deploy the project to the chosen platform
+}
+
+// Main Function to Coordinate the Steps
+function main() {
+    // Initialize project
+    initializeProject();
+    // Create index.html
+    createIndexHtml();
+    // Populate content
+    populateContent();
+    // Setup hosting
+    setupHosting();
+}
+</code>
+        </pre>
+    </section>
+</body>
+</html>

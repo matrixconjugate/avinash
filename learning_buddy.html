@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Buddy Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load the navbar
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector('header').innerHTML = data;
+                });
+        });
+    </script>
+</head>
+<body>
+    <header></header>
+    <section id="intro-content">
+        <h1>Learning Buddy Project</h1>
+        <p>This project uses Google Apps Script to create a personal learning assistant that helps with enquiry-based learning and spaced repetition. It takes a .txt file and your reading pace as input, makes API calls to the Gemini 1.5 Flash API to generate questions based on the text, compiles the questions and answers in a Google Sheet, and sends you recent and old questions via email for effective learning.</p>
+    </section>
+    <section>
+        <h2>Key Features</h2>
+        <ul>
+            <li>Accepts .txt files and reading pace as input.</li>
+            <li>Generates questions using Gemini 1.5 Flash API based on the text content.</li>
+            <li>Compiles questions and answers in a Google Sheet.</li>
+            <li>Sends recent and old questions via email for spaced repetition and enquiry-based learning.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Pseudo Code Snippet</h2>
+        <pre>
+<code>
+// High-Level Pseudo Code for Learning Buddy Project
+
+// Step 1: Read input text file and reading pace
+function processInput(file, pace) {
+    // Read the text content from the file
+    // Use the reading pace to determine the timing for questions
+}
+
+// Step 2: Generate questions using API
+function generateQuestions(text, pace) {
+    // Call Gemini 1.5 Flash API with the text and pace
+    // Retrieve generated questions from the API response
+}
+
+// Step 3: Store questions in Google Sheet
+function storeInGoogleSheet(questions) {
+    // Open or create a Google Sheet
+    // Save questions and answers in the sheet
+}
+
+// Step 4: Send questions via email
+function sendEmail(questions) {
+    // Compile recent questions for enquiry-based learning
+    // Compile old questions for spaced repetition
+    // Send the questions to the user via email
+}
+
+// Main Function to Coordinate the Steps
+function main() {
+    // Process input text file and reading pace
+    // Generate questions using API
+    // Store questions in Google Sheet
+    // Send questions via email
+}
+</code>
+        </pre>
+    </section>
+</body>
+</html>
