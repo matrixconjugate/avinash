@@ -33,12 +33,13 @@
                     `;
 
                     // Populate projects
-                    const projectsContainer = document.querySelector('.container');
-                    projectsContainer.innerHTML = ''; // Clear the container
+                    const projectsSection = document.querySelector('#projects');
+                    projectsSection.innerHTML = '<h2>Recent Projects</h2><div class="container"></div>'; // Add the heading
+                    const projectsContainer = projectsSection.querySelector('.container');
                     data.projects.forEach(project => {
                         projectsContainer.innerHTML += `
                             <div class="card">
-                                <a href="${project.link}" class="project-link">
+                                <a href="project_template.html?id=${project.id}" class="project-link">
                                     <img src="${project.image}" alt="${project.title}" width="200" height="200">
                                     <div class="content">
                                         <h3>${project.title}</h3>
@@ -131,7 +132,7 @@
 <body>
     <header></header>
     <div id="intro-content"></div>
-    <div class="container"></div>
+    <section id="projects"></section>
     <section id="skills"></section>
     <section id="experience"></section>
     <section id="education"></section>
