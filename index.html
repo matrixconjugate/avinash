@@ -7,88 +7,113 @@
 
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOM fully loaded and parsed');
+        fetch('content.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Data fetched successfully:', data);
+
+                // Populate header
+                document.querySelector('header').innerHTML = `
+                    <h1>${data.header.name}</h1>
+                    <p>${data.header.description}</p>
+                `;
+
+                // Populate projects
+                const projectsContainer = document.querySelector('.container');
+                projectsContainer.innerHTML = ''; // Clear the container
+                data.projects.forEach(project => {
+                    projectsContainer.innerHTML += `
+                        <div class="card">
+                            <img src="${project.image}" alt="${project.title}" width="200" height="200">
+                            <div class="content">
+                                <h3>${project.title}</h3>
+                                <div class="tags">
+                                    ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                // Populate skills
+                const skillsSection = document.querySelector('#skills');
+                skillsSection.innerHTML = '<h2>Skills</h2>'; // Add the heading
+                data.skills.forEach(skill => {
+                    skillsSection.innerHTML += `
+                        <strong>${skill.category}:</strong> ${skill.items.join(', ')}<br>
+                    `;
+                });
+
+                // Populate experience
+                const experienceSection = document.querySelector('#experience');
+                experienceSection.innerHTML = '<h2>Experience</h2>'; // Add the heading
+                data.experience.forEach(exp => {
+                    experienceSection.innerHTML += `
+                        <h3>${exp.company}</h3>
+                        <p><strong>${exp.position}</strong>, ${exp.duration}</p>
+                        <p>${exp.description}</p>
+                    `;
+                });
+
+                // Populate education
+                const educationSection = document.querySelector('#education');
+                educationSection.innerHTML = '<h2>Education</h2>'; // Add the heading
+                data.education.forEach(edu => {
+                    educationSection.innerHTML += `
+                        <h3>${edu.institution}</h3>
+                        <p><strong>${edu.duration}</strong></p>
+                        <i>${edu.degree}</i>
+                        <ul>
+                            ${edu.projects.map(project => `
+                                <li>${project.title}
+                                    <p>${project.description}</p>
+                                </li>
+                            `).join('')}
+                        </ul>
+                    `;
+                });
+
+                // Populate volunteer
+                const volunteerSection = document.querySelector('#volunteer');
+                volunteerSection.innerHTML = '<h2>Volunteer Experience</h2>'; // Add the heading
+                data.volunteer.forEach(vol => {
+                    volunteerSection.innerHTML += `
+                        <h3>${vol.organization}</h3>
+                        <p><strong>${vol.position}</strong>, ${vol.duration}</p>
+                        <p>${vol.description}</p>
+                    `;
+                });
+
+                // Populate awards
+                const awardsSection = document.querySelector('#awards');
+                awardsSection.innerHTML = '<h2>Honors & Awards</h2>'; // Add the heading
+                data.awards.forEach(award => {
+                    awardsSection.innerHTML += `
+                        <ul>
+                            <li><strong>${award.title}</strong> - ${award.organization} (${award.date})</li>
+                        </ul>
+                    `;
+                });
+            })
+            .catch(error => console.error('Error fetching content:', error));
+    });
+    </script>
 </head>
 <body>
-    <header>
-        <h1>Avinash Bhutani</h1>
-        <p>Currently working in the Product Team at Better Ed, an edtech company reimagining skill learning. I am an education enthusiast skilled in user research, data analytics and visualisation, project management with a solid understanding of technology. I firmly believe that the right education has the power to transform lives and build a better world. I actively volunteer with non-profits and engage in side projects to support this cause.</p>
-    </header>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><b>Data & Tech:</b> Python, Google Apps Script, SQL, Web Automation, Visible Light Communication, Sensor Fusion</li>
-            <li><b>Tools:</b> Google Analytics, Data Studio, Clevertap, Metabase</li>
-            <li><b>Others:</b> User Research, Project Management, Product Development, Teaching, Mentoring</li>
-        </ul>
-    </section>
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <h3>Better Ed Co, Bangalore</h3>
-        <p><strong>Product Manager</strong>, May 2022 - Present (2 years 1 month)</p>
-        <p>Leading product work at cooking.app to help you become confident home cooks. Apart from leading product efforts for our <a href="https://pixicook.com/master-cooking">learning product</a>, I also led analytics across all products in the organization. I have been tinkering with and embedding LLMs in product workflows.</p>
-        
-        <h3>Cuemath, Bangalore</h3>
-        <p><strong>Associate Product Manager</strong>, Apr 2021 - Apr 2022 (1 year 1 month)</p>
-        <p>Developed an alternate sales strategy as a quick experiment for the US/International market. Improved trial class request to teacher slot matching from 75% to 88% on platform and to 94% off platform using rigorous data analytics. Enhanced feedback and input response rate from roughly 25% (via WhatsApp, max reach ~50 teachers) to 65% (on platform, max reach - all active teachers).</p>
-
-        <h3>Texas Instruments, Bangalore</h3>
-        <p><strong>Digital Design Intern</strong>, May 2019 - Jul 2019 (3 months)</p>
-        <p>Automated power analysis tools for semiconductor chips using Python and TCL, analyzing over 1M+ data points across various PVT values. Secured a PPO.</p>
-
-        <h3>Intellify, Delhi</h3>
-        <p><strong>Founding Team</strong>, Jan 2018 - May 2020 (2 years 5 months)</p>
-        <p>Driven by a passion for teaching, I became involved in this project at IIT Delhi. Gained firsthand experience in organizational transformations and large-scale problem solving, acquiring skills in product development, event management, content creation, and operations. Highlights include conducting social entrepreneurship workshops in Delhi schools, organizing a 6-day design bootcamp for kids at the IITD campus, and conducting a nationwide olympiad.</p>
-    </section>
-    
-    <section id="education">
-        <h2>Education</h2>
-        <h3>Indian Institute of Technology Delhi, (Jul 2016 - Jun 2020)</h3>
-        <i>Bachelor of Technology in Electrical, Electronics and Communications Engineering.</i><br>
-        <ul>
-            <li>Visible Light Communication, Jul 2019 - May 2020 
-                <p>Devised a new coding-decoding scheme for flicker mitigation over a 5kbps data-rate. Enhanced the scheme to support dimming over a 60% intensity band, limiting flickering statistically. Simulated existing modulation schemes to match BER, BW, and PSD with theoretical results. Derived PSDs analytically and numerically for various coding schemes.</p>
-            </li> 
-
-            <li>Autonomous Robots - DL1234, Jan 2018 - Jul 2018
-                <p>Implemented vision-based localization using Logitech webcam and OpenCV's Aruco Marker-based libraries. Developed and implemented a sensor fusion model based on the Extended Kalman Filter (EKF) to improve robot localization. Used OptiTrack Motive to track robot motion and compare regular odometry-based pose with EKF-based estimated pose.</p>
-            </li> 
-
-            <li>Trooper Gripper | Techfest 2016, IIT Bombay, Nov 2016 - Dec 2016
-                <p>Developed a robot capable of gripping and transporting objects while avoiding obstacles, pits, and crossing slopes in a designated arena.</p>
-            </li> 
-        </ul>
-    </section>
-    
-  
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <h3>Automation With Python & Bash</h3>
-        <p>Nov 2019 - Present</p>
-        <p>Automated login/logout processes for multiple websites including LinkedIn, Facebook, Twitter, edX, Coursera, and more. Automated content scraping for training predictive models. Built a WhatsApp (web) bot for customized conversations from multiple accounts. Automated YouTube Studio Services for bulk upload, edit, delete, change settings, and status mapping of videos.</p>
-    </section>
-    <section id="volunteer">
-    <h2>Volunteer Experience</h2>
-    
-    <h3>NSS IIT Delhi</h3>
-        <strong>Teacher Grade 8-12</strong>, Aug 2016 - Sep 2017 (1 year 2 months)<br>One of my students qualified JEE Mains and ended up joining DTU.
-    <h3>Mentor Together</h3>
-        <strong>Mentor</strong>, Mar 2022 - Oct 2022 (8 months)<br>Mentored a BSc undergraduate for job readiness, assisting with goal setting, communication skills, resume writing, finding relevant resources, cold reach-outs, and utilizing LinkedIn. He ended up accepted a Technical Assistant role at a company.
-    
-    <h3>Newslaundry</h3>
-        <strong>Business Analyst</strong>, Jan 2021 - Mar 2021 (3 months) <br>Worked on Google Analytics, Data Studio, and Python. Developed a website heatmap generator using Google Analytics data and Python to manipulate HTML. 
-</section>
-
-    <section id="awards">
-        <h2>Honors & Awards</h2>
-        <ul>
-            <li><strong>Karmaveer Global Young Leaders Fellow</strong> - TCC-REX | UN | IITD (Oct 2019)</li>
-<li><strong>IITD Semester Merit Award</strong> - IIT Delhi (May 2017)</li>
-<li><strong>KVPY</strong> - Kishore Vaigyanik Protsahan Yojana (2015)</li>
-</ul>
-</section>
-
+    <header></header>
+    <div class="container"></div>
+    <section id="skills"></section>
+    <section id="experience"></section>
+    <section id="education"></section>
+    <section id="volunteer"></section>
+    <section id="awards"></section>
 </body>
 </html>

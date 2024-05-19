@@ -1,0 +1,83 @@
+{
+  "header": {
+    "name": "Avinash Bhutani",
+    "description": "Hey there! I'm Avinash, a generalist who loves solving complex problems. I graduated with a BTech in Electrical Engineering from IIT Delhi. Being fascinated by startups and passionate about teaching, I have worked with edtech startups ever since. Currently, I'm at Better Ed Co (pixicook.com), where we're building a cool learning product among other cooking products. I enjoy reading science, diving into abstract ideas, and occasionally penning down my thoughts."
+  },
+  "projects": [
+    {
+      "title": "Learning Buddy",
+      "image": "media/plapp.jpeg",
+      "tags": ["Gemini", "Apps Script"]
+    },
+    {
+      "title": "This Portfolio",
+      "image": "media/portfolio.jpeg",
+      "tags": ["JavaScript","GPT-4o"]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Highly skilled at",
+      "items": ["Python", "Google Apps Script", "SQL", "Web Automation", "Clevertap", "Metabase", "Data Studio", "User Research"]
+    },
+    {
+      "category": "Knows",
+      "items": ["Machine learning", "Visible Light Communication", "Sensor Fusion"]
+    },
+    {
+      "category": "Loves",
+      "items": ["Teaching", "Mentoring"]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Better Ed Co, Bangalore",
+      "position": "Product Manager",
+      "duration": "May 2022 - Present",
+      "description": "Leading product work at cooking.app to help you become confident home cooks. Apart from leading product efforts for our learning product, I also led analytics across all products in the organization. I have been tinkering with and embedding LLMs in product workflows."
+    },
+    {
+      "company": "Cuemath, Bangalore",
+      "position": "Associate Product Manager",
+      "duration": "Apr 2021 - Apr 2022",
+      "description": "Developed an alternate sales strategy as a quick experiment for the US/International market. Improved trial class request to teacher slot matching from 75% to 88% on platform and to 94% off platform using rigorous data analytics. Enhanced feedback and input response rate from roughly 25% (via WhatsApp, max reach ~50 teachers) to 65% (on platform, max reach - all active teachers)."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Indian Institute of Technology Delhi",
+      "duration": "Jul 2016 - Jun 2020",
+      "degree": "Bachelor of Technology in Electrical, Electronics and Communications Engineering",
+      "projects": [
+        {
+          "title": "Visible Light Communication",
+          "description": "Devised a new coding-decoding scheme for flicker mitigation over a 5kbps data-rate. Enhanced the scheme to support dimming over a 60% intensity band, limiting flickering statistically. Simulated existing modulation schemes to match BER, BW, and PSD with theoretical results. Derived PSDs analytically and numerically for various coding schemes."
+        },
+        {
+          "title": "Autonomous Robots - DL1234",
+          "description": "Implemented vision-based localization using Logitech webcam and OpenCV's Aruco Marker-based libraries. Developed and implemented a sensor fusion model based on the Extended Kalman Filter (EKF) to improve robot localization. Used OptiTrack Motive to track robot motion and compare regular odometry-based pose with EKF-based estimated pose."
+        }
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "NSS IIT Delhi",
+      "position": "Teacher Grade 8-12",
+      "duration": "Aug 2016 - Sep 2017",
+      "description": "One of my students qualified JEE Mains and ended up joining DTU."
+    }
+  ],
+  "awards": [
+    {
+      "title": "Karmaveer Global Young Leaders Fellow",
+      "organization": "TCC-REX | UN | IITD",
+      "date": "Oct 2019"
+    },
+    {
+      "title": "IITD Semester Merit Award",
+      "organization": "IIT Delhi",
+      "date": "May 2017"
+    }
+  ]
+}
