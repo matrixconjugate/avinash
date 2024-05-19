@@ -37,7 +37,7 @@
                     projectsSection.innerHTML = '<h2>Recent Projects</h2><div class="projects"></div>'; // Add the heading
                     const projectsContainer = projectsSection.querySelector('.projects');
                     data.projects.forEach(project => {
-                        const projectTypeIcon = project.projectType === 'personal' ? '👨‍💻' : '🏢';
+                        const projectTypeIcon = project.projectType === 'personal' ? '🧑🏼' : '💻';
                         projectsContainer.innerHTML += `
                             <div class="card">
                                 <a href="project_template.html?id=${project.id}" class="project-link">
