@@ -3,15 +3,15 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #FFF8E1; /* Light Beige */
+    color: #212121; /* Almost Black */
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #FFF8DC; /* Cornsilk */
+    color: #212121; /* Almost Black */
     padding: 1rem 1.5rem;
-    margin: 1.5rem;
+    border-radius: 8px;
 }
 
 header h1 {
@@ -25,8 +25,8 @@ header p {
 }
 
 nav ul {
-    background: #444;
-    color: #fff;
+    background: #FFA000; /* Dark Mustard */
+    color: #ffffff; /* White */
     padding: 0;
     list-style: none;
     text-align: center;
@@ -38,7 +38,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff; /* White */
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
@@ -46,13 +46,13 @@ nav ul li a {
 section {
     padding: 1.5rem;
     margin: 1.5rem;
-    background: #fff;
-    border-radius: 2px;
+    background: #ffffff; /* White */
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #FFA000; /* Dark Mustard */
     padding-bottom: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
@@ -86,19 +86,19 @@ footer {
     padding: 20px;
     gap: 10px;
     margin: 1.5rem; /* Center the container */
-    background-color: #fff;
-    border-radius: 10px;
+    background-color: #ffffff; /* White */
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .card {
-    width: 180px;
+    width: 200px;
     height: 300px; /* Adjusted height to fit tags */
-    border: 1px solid #ddd;
+    border: 1px solid #FFD54F; /* Light Mustard */
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    background-color: #fff;
+    background-color: #FFF8E1; /* Light Beige */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,18 +132,18 @@ footer {
 }
 
 .card .content .tags .tag {
-    background-color: #eee;
+    background-color: #FFC107; /* Mustard Yellow */
     border-radius: 10px;
     padding: 5px 10px;
     font-size: 12px;
-    color: #333;
+    color: #212121; /* Almost Black */
 }
 
 .card .content .heart-icon {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #fff;
+    background-color: #ffffff; /* White */
     border-radius: 50%;
     padding: 5px;
 }
