@@ -1,7 +1,7 @@
 {
   "header": {
     "name": "Welcome!",
-    "description": "Hi! I'm Avinash. All the progress in machine learning has made me rethink my idea of becoming a "learning machine". Until I find a new answer to what to do with my life, I am spending time reading, building, and working with good people. I enjoy reading science, exploring abstract ideas, and I write occasionally."
+    "description": "Hi! I'm Avinash. All the progress in machine learning has made me rethink my idea of becoming a 'learning machine'. Until I find a new answer to what to do with my life, I am spending time reading, building, and working with good people. I enjoy reading science, exploring abstract ideas, and I write occasionally.",
     "projects": [
     {
       "id": "learning_buddy",
