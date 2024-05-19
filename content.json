@@ -1,9 +1,8 @@
 {
   "header": {
-    "name": "Avinash Bhutani",
-    "description": "Hey there! I'm Avinash, a generalist who loves solving complex problems. I graduated with a BTech in Electrical Engineering from IIT Delhi. Being fascinated by startups and passionate about teaching, I have worked with edtech startups ever since. Currently, I'm at Better Ed Co (pixicook.com), where we're building a cool learning product among other cooking products. I enjoy reading science, diving into abstract ideas, and occasionally penning down my thoughts."
-  },
-  "projects": [
+    "name": "Welcome!",
+    "description": "Hi! I'm Avinash. All the progress in machine learning has made me rethink my idea of becoming a "learning machine". Until I find a new answer to what to do with my life, I am spending time reading, building, and working with good people. I enjoy reading science, exploring abstract ideas, and I write occasionally."
+    "projects": [
     {
       "id": "learning_buddy",
       "title": "Learning Buddy",
