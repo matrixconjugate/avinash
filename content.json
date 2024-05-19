@@ -10,6 +10,7 @@
       "image": "media/plapp.jpeg",
       "link": "project_template.html?id=learning_buddy",
       "tags": ["Gemini", "Apps Script"],
+      "projectType": "personal",
       "description": "This project uses Google Apps Script to create a personal learning assistant that helps with enquiry-based learning and spaced repetition. It takes a .txt file and your reading pace as input, makes API calls to the Gemini 1.5 Flash API to generate questions based on the text, compiles the questions and answers in a Google Sheet, and sends you recent and old questions via email for effective learning.",
       "features": [
         "Accepts .txt files and reading pace as input.",
@@ -20,10 +21,30 @@
       "pseudo_code": "// High-Level Pseudo Code for Learning Buddy Project\n\n// Step 1: Read input text file and reading pace\nfunction processInput(file, pace) {\n    // Read the text content from the file\n    // Use the reading pace to determine the timing for questions\n}\n\n// Step 2: Generate questions using API\nfunction generateQuestions(text, pace) {\n    // Call Gemini 1.5 Flash API with the text and pace\n    // Retrieve generated questions from the API response\n}\n\n// Step 3: Store questions in Google Sheet\nfunction storeInGoogleSheet(questions) {\n    // Open or create a Google Sheet\n    // Save questions and answers in the sheet\n}\n\n// Step 4: Send questions via email\nfunction sendEmail(questions) {\n    // Compile recent questions for enquiry-based learning\n    // Compile old questions for spaced repetition\n    // Send the questions to the user via email\n}\n\n// Main Function to Coordinate the Steps\nfunction main() {\n    // Process input text file and reading pace\n    // Generate questions using API\n    // Store questions in Google Sheet\n    // Send questions via email\n}"
     },
     {
+    "id": "cook_intuitively",
+    "title": "Cook Intuitively",
+    "image": "media/cooking.jpeg",
+    "link": "project_template.html?id=cook_intuitively",
+    "tags": ["PMing", "Data"],
+    "projectType": "work",
+    "description": "This project helps users master the art of intuitive cooking. With a focus on teaching the 'why' behind each step, users can learn to cook without relying strictly on recipes. The project includes step-by-step video recipes, customizable plans to suit dietary needs and preferences, and a comprehensive approach to mastering ingredients and techniques.",
+    "features": [
+      "Learn as you cook: Master key cooking techniques and concepts as you follow a recipe.",
+      "Adapts to you: Customize recipes to fit your dietary needs, preferences, and constraints.",
+      "Step-by-Step Video Recipes: Follow along with easy-to-understand videos for each recipe.",
+      "Personalized Cooking Plan: Get a tailored plan for what to cook based on your tastes and skill level.",
+      "Master One, Cook Many: Cook 20+ dishes from a single master recipe.",
+      "Learn the Concept: Understand the 'why' behind each step to learn to cook intuitively.",
+      "Master Ingredients: Learn how to bring out the best in each ingredient.",
+      "Culinary Mastery: Discover the secrets to cook like Grandma, from key principles to personalizing recipes with ease."
+    ]
+    },
+    {
       "id": "this_portfolio",
       "title": "This Portfolio",
       "image": "media/portfolio.jpeg",
       "link": "project_template.html?id=this_portfolio",
+      "projectType": "personal",
       "tags": ["JavaScript", "GPT-4o"],
       "description": "I have been struggling to put together a website because of logistics - I am not a dev/designer. I am a PM. PMs don't really work lol. Jokes apart, things like setting up a database, hosting the project, and making sure you have assets always led to delaying this project. GPT-4o enters the chat (quite literally)! I asked GPT-4o that I wanted to put a one pager on GitHub to showcase my projects, and that led to this! There is a main index.html that references a bunch of content from content.json and other <project>.html files. It took me 4 hours to put everything together, and I am amazed by GPT-4o's (and in general all other LLMs') performance and cost.",
       "features": [

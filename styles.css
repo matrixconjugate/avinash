@@ -106,26 +106,48 @@ footer {
     display: none;
 }
 
-.container {
+.projects {
     display: flex;
     overflow-x: auto;
+    gap: 20px;
     padding: 20px;
-    gap: 10px;
+    scroll-snap-type: x mandatory; /* Enable snap scrolling */
 }
 
 .card {
-    width: 200px;
-    height: 300px; /* Adjusted height to fit tags */
-    border: 1px solid #FFD54F; /* Light Mustard */
+    position: relative; /* Position the project type icon */
+    min-width: 200px; /* Use min-width to ensure the cards fit */
+    height: 300px; /* Adjust height to fit the content */
+    border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    background-color: #FFF8E1; /* Light Beige */
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    flex-shrink: 0; /* Prevent cards from shrinking */
+    scroll-snap-align: start; /* Align cards to the start of the scroll container */
+}
+
+.project-type {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 16px; /* Adjust size as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+}
+
+.card img {
+    width: 100%;
+    height: 60%; /* Adjust as needed */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
 .card a {
@@ -140,12 +162,6 @@ footer {
 
 .card a:hover {
     cursor: pointer; /* Change cursor on hover */
-}
-
-.card img {
-    width: 100%;
-    height: 60%; /* Adjust as needed */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
 .card .content {
@@ -212,9 +228,4 @@ code {
 
 #projects h2 {
     margin-bottom: 10px;
-}
-
-.container {
-    display: flex;
-    gap: 20px;
 }
