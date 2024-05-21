@@ -1,7 +1,7 @@
 {
   "header": {
     "name": "Welcome!",
-    "description": "Hi! I'm Avinash. All the progress in machine learning has made me rethink my idea of becoming a 'learning machine'. Until I find a new answer to what to do with my life, I am spending time reading, building, and working with good people. I enjoy reading science, exploring abstract ideas, and I write occasionally."
+    "description": "Hi! I'm Avinash. All the progress in machine learning has made me rethink my goal of becoming a 'learning machine'. Until I find a new answer to what to do with my life, I am spending time reading, building, and working with good people. I enjoy reading science, exploring abstract ideas, and I write occasionally."
     },
     "projects": [
     {
@@ -11,6 +11,7 @@
       "link": "project_template.html?id=learning_buddy",
       "tags": ["Gemini", "Apps Script"],
       "projectType": "personal",
+      "upcoming": false,
       "description": "This project uses Google Apps Script to create a personal learning assistant that helps with enquiry-based learning and spaced repetition. It takes a .txt file and your reading pace as input, makes API calls to the Gemini 1.5 Flash API to generate questions based on the text, compiles the questions and answers in a Google Sheet, and sends you recent and old questions via email for effective learning.",
       "features": [
         "Accepts .txt files and reading pace as input.",
@@ -25,8 +26,9 @@
     "title": "Cook Intuitively",
     "image": "media/cooking.jpeg",
     "link": "project_template.html?id=cook_intuitively",
-    "tags": ["PMing", "Data"],
+    "tags": ["Product", "Data"],
     "projectType": "work",
+    "upcoming": false,
     "description": "This project helps users master the art of intuitive cooking. With a focus on teaching the 'why' behind each step, users can learn to cook without relying strictly on recipes. The project includes step-by-step video recipes, customizable plans to suit dietary needs and preferences, and a comprehensive approach to mastering ingredients and techniques.",
     "features": [
       "Learn as you cook: Master key cooking techniques and concepts as you follow a recipe.",
@@ -45,6 +47,7 @@
       "image": "media/portfolio.jpeg",
       "link": "project_template.html?id=this_portfolio",
       "projectType": "personal",
+      "upcoming": true,
       "tags": ["JavaScript", "GPT-4o"],
       "description": "I have been struggling to put together a website because of logistics - I am not a dev/designer. I am a PM. PMs don't really work lol. Jokes apart, things like setting up a database, hosting the project, and making sure you have assets always led to delaying this project. GPT-4o enters the chat (quite literally)! I asked GPT-4o that I wanted to put a one pager on GitHub to showcase my projects, and that led to this! There is a main index.html that references a bunch of content from content.json and other <project>.html files. It took me 4 hours to put everything together, and I am amazed by GPT-4o's (and in general all other LLMs') performance and cost.",
       "features": [
@@ -59,17 +62,35 @@
   ],
   "skills": [
     {
-      "category": "Highly skilled at",
-      "items": ["Python", "Google Apps Script", "SQL", "Web Automation", "Clevertap", "Metabase", "Data Studio", "User Research"]
+      "category": "Data & Scripting",
+      "items": [
+        { "name": "Python", "rating": 4},
+        { "name": "Google Apps Script", "rating": 4 },
+        { "name": "SQL", "rating": 4 },
+        { "name": "Clevertap", "rating": 4 },
+        { "name": "Metabase", "rating": 5 },
+        { "name": "Data Studio", "rating": 5 },
+        { "name": "Web Automation", "rating": 3 }
+        
+      ]
     },
     {
-      "category": "Knows",
-      "items": ["Machine learning", "Visible Light Communication", "Sensor Fusion"]
+      "category": "Cross Functional",
+      "items": [
+        { "name": "User Research", "rating": 4 },
+        { "name": "Teaching & Mentoring", "rating": 5 }
+        
+      ]
     },
     {
-      "category": "Loves",
-      "items": ["Teaching", "Mentoring"]
+      "category": "Others",
+      "items": [
+        { "name": "Machine learning", "rating": 3 },
+        { "name": "Visible Light Communication", "rating": 3 },
+        { "name": "Sensor Fusion", "rating": 3 }
+      ]
     }
+
   ],
   "experience": [
     {
