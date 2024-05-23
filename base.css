@@ -1,0 +1,101 @@
+/* Base styles for consistent padding */
+.container {
+    margin: 0 auto;
+    padding: 0 1rem; /* Default padding */
+}
+
+header {
+    color: #212121; /* Almost Black */
+    padding: 1rem 1rem; /* Default padding */
+    margin: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Container for consistent padding across devices */
+@media (min-width: 768px) {
+    .container {
+        padding: 0 2rem; /* Adjust the padding as needed */
+    }
+
+    header {
+        padding: 1rem 2rem; /* Adjust the padding as needed */
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 4rem; /* Adjust the padding as needed */
+    }
+
+    header {
+        padding: 1rem 4rem; /* Adjust the padding as needed */
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        padding: 0 6rem; /* Adjust the padding as needed */
+    }
+
+    header {
+        padding: 1rem 6rem; /* Adjust the padding as needed */
+    }
+}
+
+/* Styles for header navigation */
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: #212121; /* Almost Black */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 0.5rem;
+    margin: 0 0.5rem;
+}
+
+header nav a:hover {
+    border-bottom: 1px solid #212121; /* Almost Black */
+}
+
+/* Styles for breadcrumbs on mobile devices */
+.breadcrumbs {
+    display: none; /* Hidden by default */
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #212121; /* Almost Black */
+}
+
+.breadcrumbs li {
+    margin: 0 5px;
+}
+
+.breadcrumbs li a {
+    color: #212121; /* Almost Black */
+    text-decoration: none;
+    padding: 0.5rem;
+    border: 2px solid #212121; /* Almost Black */
+    border-radius: 5px;
+    background-color: #635bff; /* Mustard Yellow */
+}
+
+.breadcrumbs li a:hover {
+    background-color: #635bff; /* Dark Mustard */
+}
+
+/* Show breadcrumbs and hide nav on small screens */
+@media (max-width: 767px) {
+    header nav {
+        display: none;
+    }
+
+    .breadcrumbs {
+        display: flex;
+    }
+}

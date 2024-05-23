@@ -1,0 +1,42 @@
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills-cards {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory; /* Enable snap scrolling */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.skills-cards::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.skill-card {
+    background-color: #e2e1f7; /* Cornsilk */
+    border-radius: 8px;
+    padding: 10px;
+    min-width: 150px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-align: start; /* Align cards to the start of the scroll container */
+}
+
+.skill-name {
+    font-size: 0.875rem; /* Smaller font size */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-rating {
+    font-size: 0.875rem; /* Smaller font size */
+    color: #635bff; /* Mustard Yellow */
+}

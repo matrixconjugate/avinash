@@ -1,0 +1,36 @@
+#intro-content, section {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background: #ffffff; /* White */
+}
+
+#intro-content h1, section h2 {
+    margin: 1rem 0;
+    font-size: 1.375rem; /* Slightly reduced size */
+}
+
+#intro-content p, section p {
+    margin: 1rem 0;
+    font-size: 1rem; /* Smaller body text */
+}
+
+section h2 {
+    border-bottom: 2px solid black; /* Dark Mustard */
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem; /* Adjust as needed */
+}
+
+section ul {
+    padding-left: 1rem;
+    margin: 0.5rem 0;
+}
+
+section ul li {
+    margin: 0.2rem 0;
+}
+
+h3 {
+    margin: 0.5rem 0;
+    font-size: 1rem; /* Adjust as needed */
+}

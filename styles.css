@@ -127,6 +127,8 @@ footer {
     flex-direction: column;
     align-items: center;
     scroll-snap-align: start; /* Align cards to the start of the scroll container */
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-in-out forwards;
 }
 
 .project-type {
@@ -266,3 +268,26 @@ code {
     font-size: 14px;
     color: #FFC107; /* Mustard Yellow */
 }
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+/* Add more nth-child as needed based on the number of cards */

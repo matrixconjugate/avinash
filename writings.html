@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writings - Avinash Bhutani</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="project-cards.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="code-snippet.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load the navbar
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector('header').innerHTML = data;
+                });
+
+            // Fetch writings.json and populate the page
+            fetch('writings.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const writingsSection = document.querySelector('#writings');
+                    data.writings.forEach(writing => {
+                        const article = document.createElement('article');
+                        article.innerHTML = `<p><strong>${writing.title}</strong>, ${writing.date}<p>`;
+                        writing.content.forEach(item => {
+                            if (typeof item === 'string') {
+                                const paragraph = document.createElement('p');
+                                paragraph.textContent = item;
+                                article.appendChild(paragraph);
+                            } else if (item.type === 'image') {
+                                const img = document.createElement('img');
+                                img.src = item.src;
+                                img.alt = item.alt;
+                                article.appendChild(img);
+                            }
+                        });
+                        writingsSection.appendChild(article);
+                    });
+                })
+                .catch(error => console.error('Error fetching writings:', error));
+        });
+    </script>
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <section id="writings">
+            <h1>Writings</h1>
+        </section>
+    </div>
+</body>
+</html>
