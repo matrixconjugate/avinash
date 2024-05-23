@@ -18,7 +18,7 @@
 }
 
 .skill-card {
-    background-color: #e2e1f7; /* Cornsilk */
+    background-color: #dfe8f5; /* Cornsilk */
     border-radius: 8px;
     padding: 10px;
     min-width: 150px;
@@ -33,10 +33,19 @@
 .skill-name {
     font-size: 0.875rem; /* Smaller font size */
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
-.skill-rating {
-    font-size: 0.875rem; /* Smaller font size */
-    color: #635bff; /* Mustard Yellow */
+.skill-progress-container {
+    width: 100%;
+    background-color: #fff; /* Light grey background */
+    border-radius: 5px;
+    overflow: hidden;
+    height: 3px; /* Progress bar height */
+    margin: 5px;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #635bff; /* Mustard Yellow */
 }

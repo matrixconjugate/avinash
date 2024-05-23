@@ -64,30 +64,30 @@
     {
       "category": "Data & Scripting",
       "items": [
-        { "name": "Python", "rating": 4},
-        { "name": "Google Apps Script", "rating": 4 },
-        { "name": "SQL", "rating": 4 },
-        { "name": "Clevertap", "rating": 4 },
-        { "name": "Metabase", "rating": 5 },
-        { "name": "Data Studio", "rating": 5 },
-        { "name": "Web Automation", "rating": 3 }
+        { "name": "Python", "rating": 8},
+        { "name": "Google Apps Script", "rating": 8 },
+        { "name": "SQL", "rating": 8 },
+        { "name": "Clevertap", "rating": 8 },
+        { "name": "Metabase", "rating": 9 },
+        { "name": "Data Studio", "rating": 9 },
+        { "name": "Web Automation", "rating": 6 }
         
       ]
     },
     {
       "category": "Cross Functional",
       "items": [
-        { "name": "User Research", "rating": 4 },
-        { "name": "Teaching & Mentoring", "rating": 5 }
+        { "name": "User Research", "rating": 8 },
+        { "name": "Teaching & Mentoring", "rating": 9 }
         
       ]
     },
     {
       "category": "Others",
       "items": [
-        { "name": "Machine learning", "rating": 3 },
-        { "name": "Visible Light Communication", "rating": 3 },
-        { "name": "Sensor Fusion", "rating": 3 }
+        { "name": "Machine learning", "rating": 6 },
+        { "name": "Visible Light Communication", "rating": 6 },
+        { "name": "Sensor Fusion", "rating": 6 }
       ]
     }
 

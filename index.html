@@ -46,7 +46,6 @@
                         projectsContainer.innerHTML += `
                             <div class="card" style="animation-delay: ${index * 0.1}s">
                                 <a href="project_template.html?id=${project.id}" class="project-link">
-                                    <div class="project-type">${projectTypeIcon}</div>
                                     <img src="${project.image}" alt="${project.title}" width="200" height="200">
                                     <div class="content">
                                         <h3>${project.title}</h3>
@@ -60,18 +59,20 @@
                     });
 
                     // Populate skills
-                    const skillsSection = document.querySelector('#skills');
+                   const skillsSection = document.querySelector('#skills');
                     skillsSection.innerHTML = '<h2>Skills</h2><div class="skills-container"></div>'; // Add the heading
                     const skillsContainer = skillsSection.querySelector('.skills-container');
                     data.skills.forEach(skillCategory => {
                         skillsContainer.innerHTML += `<h3>${skillCategory.category}</h3><div class="skills-cards"></div>`;
                         const skillsCards = skillsContainer.querySelector('.skills-cards:last-child');
                         skillCategory.items.forEach(skill => {
-                            const stars = Array(skill.rating).fill('★').concat(Array(5 - skill.rating).fill('☆')).join('');
+                            const progressPercentage = (skill.rating / 9) * 100; // Convert rating to percentage
                             skillsCards.innerHTML += `
                                 <div class="skill-card">
                                     <div class="skill-name">${skill.name}</div>
-                                    <div class="skill-rating">${stars}</div>
+                                    <div class="skill-progress-container">
+                                        <div class="skill-progress" style="width: ${progressPercentage}%"></div>
+                                    </div>
                                 </div>
                             `;
                         });
@@ -146,11 +147,6 @@
 </head>
 <body>
     <header></header>
-    <ul class="breadcrumbs">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="writings.html">Writings</a></li>
-        <!-- Add more breadcrumb links as needed -->
-    </ul>
     <div class="container">
         <div id="intro-content"></div>
         <section id="projects"></section>

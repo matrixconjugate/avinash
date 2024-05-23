@@ -1,7 +1,6 @@
 #intro-content, section {
     padding: 0.5rem;
     margin: 0.5rem;
-    background: #ffffff; /* White */
 }
 
 #intro-content h1, section h2 {
@@ -15,7 +14,7 @@
 }
 
 section h2 {
-    border-bottom: 2px solid black; /* Dark Mustard */
+    border-bottom: 2px solid #212121; /* Dark Mustard */
     padding-bottom: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 1.125rem; /* Adjust as needed */

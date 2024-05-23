@@ -67,7 +67,7 @@
 .card .content h3 {
     margin: 0;
     font-size: 16px;
-    color: #635bff; /* Deep Purple */
+    color: #212121; /* Deep Purple */
 }
 
 .card .content .tags {
@@ -79,9 +79,9 @@
 }
 
 .card .content .tags .tag {
-    background-color: #e2e1f7; /* Mustard Yellow */
+    background-color: #dfe8f5; /* Mustard Yellow */
     border-radius: 10px;
     padding: 5px 10px;
     font-size: 12px;
-    color: black; /* Almost Black */
+    color: #212121; /* Almost Black */
 }
