@@ -1,26 +1,13 @@
 {
     "writings": [
         {
-            "title": "Ed Sheeran, Photograph",
+            "title": "building with LLMs",
             "date": "23 May 2024",
             "content": [
-                "It took us 2 centuries to move from first ever image to be captured to be breathing images every minute of our lives. Here is the first ever image taken of a living man (at least believed to be).",
-                {
-                    "type": "image",
-                    "src": "File:Boulevard du Temple by Daguerre.jpg",
-                    "alt": "First ever image taken of a living man"
-                },
-                "When we talk about images, the excitement is about capturing a ‘moment’ in time. What a wonderful idea! But do you know we haven’t been able to and will possibly never be able to capture exactly a ‘moment‘ in time?",
-                "Yes, your pictures have information from more than one time instant. We have all heard of pixels (a spatial resolution entity) which quantifies how much spatial information is captured in an image. There is a similar aspect related to images, called temporal resolution.",
-                "Temporal resolution essentially is a metric of ‘how fast’ your camera is. Now what makes a camera faster? It’s ability to concentrate enough photons (energy/information) at a point so as to capture a useful scene. You might have seen an info message ‘Keep your camera still for sometime’ while using Night Mode for capturing photographs. Your camera is basically gathering enough information to give you something useful.",
-                "Let’s go back to the very first image we saw. Do you notice something unusual here?",
-                {
-                    "type": "image",
-                    "src": "File:Boulevard du Temple by Daguerre.jpg",
-                    "alt": "First ever image taken of a living man"
-                },
-                "Why is it that you can only see 2 men in this image (can you see! Lower left corner)? It is very strange for an area with so much accommodation to have only two men in open sun! Actually there might have been many people around but none of them were captured as they were not stationary. One of these men is polishing other’s shoe and hence both were stationary for long enough to be captured. At any point in space camera is recording all the energy falling onto it across time and you see an imperfect version of whatever was there for most of the time.",
-                "This is exactly the limit of your eyes too. This is why you can almost see through a fan rotating at a good speed!"
+                "don't build apps which are basically:",
+                "llm + incremental reasoning",
+                "llm + incremental tool use",
+                "think of llms as algorithms. value lies not in algorithms (unless you are a quant firm) but rather in the experience you deliver with algorithms."
             ]
         }
     ]
