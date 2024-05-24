@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>writings</title>
+    <title>maths</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="content.css">
@@ -32,7 +32,7 @@
                 .then(data => {
                     const writingsSection = document.querySelector('#writings');
                     data.writings.forEach(writing => {
-                        if (writing.content_type === 'writing') {
+                        if (writing.content_type === 'math') {
                             const article = document.createElement('article');
                             article.innerHTML = `<p><strong>${writing.title}</strong>, ${writing.date}</p>`;
                             writing.content.forEach(item => {
@@ -59,7 +59,7 @@
     <header></header>
     <div class="container">
         <section id="writings">
-            <h1>some thoughts</h1>
+            <h1>some puzzles</h1>
         </section>
     </div>
 </body>

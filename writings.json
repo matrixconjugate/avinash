@@ -3,11 +3,24 @@
         {
             "title": "building with LLMs",
             "date": "23 May 2024",
+            "content_type": "writing",
             "content": [
                 "don't build apps which are basically:",
                 "llm + incremental reasoning",
                 "llm + incremental tool use",
                 "think of llms as algorithms. value lies not in algorithms (unless you are a quant firm) but rather in the experience you deliver with algorithms."
+            ]
+        },
+        {
+            "title": "prove that 100! > 10^100",
+            "date": "24 May 2024",
+            "content_type": "math",
+            "content": [
+                "numbers from 90 - 100 are all > 9×10",
+                "numbers from 80 - 90 are all > 8×10",
+                ".. and so on",
+                "hence the product > (9!)^10 × (10^10)^9 or (9!)^10 × 10^90",
+                "since 9! > 10, it follows that 100! > 10^100"
             ]
         }
     ]
