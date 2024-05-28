@@ -5,9 +5,24 @@
     },
     "projects": [
     {
+      "id": "epub_canvas",
+      "title": "Epub Canvas",
+      "image": "media/epubcanvas.png",
+      "link": "project_template.html?id=epub_canvas",
+      "tags": ["JavaScript"],
+      "projectType": "personal",
+      "upcoming": false,
+      "description": "I tend to read ebooks more than physical books and I like to scribble. Couldn't find an app that allows me to scribble on an epub file so I built one! I spent good 20 hours (with gpt-4o) building this than actually reading what I was supposed to read :)",
+      "features": [
+        "Lets you upload epub.",
+        "Extracts htmls from epub and saves them to local storage",
+        "Allows you to draw on top of html and drawings persist (coz saved in local storage)"    ],
+      "pseudo_code": ""
+    },
+    {
       "id": "learning_buddy",
       "title": "Learning Buddy",
-      "image": "media/plapp.jpeg",
+      "image": "media/plapp.png",
       "link": "project_template.html?id=learning_buddy",
       "tags": ["Gemini", "Apps Script"],
       "projectType": "personal",
@@ -133,12 +148,17 @@
   ],
   "awards": [
     {
-      "title": "Karmaveer Global Young Leaders Fellow",
-      "organization": "TCC-REX | UN | IITD",
-      "date": "Oct 2019"
+      "title": "KVPY - Awarded Fellowship",
+      "organization": "IISc, Bangalore",
+      "date": "Jan 2015"
     },
     {
-      "title": "IITD Semester Merit Award",
+      "title": "AIR 302, JEE Advanced",
+      "organization": "",
+      "date": "2016"
+    },
+  {
+      "title": "Semester Merit Award",
       "organization": "IIT Delhi",
       "date": "May 2017"
     }
