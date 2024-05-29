@@ -8,7 +8,7 @@
 
 .card {
     position: relative; /* Position the project type icon */
-    min-width: 200px; /* Use min-width to ensure the cards fit */
+    width: 180px; /* Use min-width to ensure the cards fit */
     height: 300px; /* Adjust height to fit the content */
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -40,7 +40,7 @@
 
 .card img {
     width: 100%;
-    height: 60%; /* Adjust as needed */
+    height: 70%; /* Adjust as needed */
     object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
