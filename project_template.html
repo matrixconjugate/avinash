@@ -39,6 +39,12 @@
                             <h1>${project.title}</h1>
                             <p>${project.description}</p>
                         `;
+                        if (project.trylink.length > 0) {
+                            document.getElementById('project-link').innerHTML = `
+                                <a href="${project.trylink}">Try It Out Here</a>
+                            `;
+                        }
+
 
                         if (project.features.length > 0) {
                             document.getElementById('features').innerHTML = `
@@ -49,9 +55,9 @@
                             `;
                         }
 
-                        document.getElementById('pseudo-code').innerHTML = `
-                            <h2>Pseudo Code Snippet</h2>
-                            <pre><code>${project.pseudo_code}</code></pre>
+                        document.getElementById('flow-diagram').innerHTML = `
+                            <h2>How Does It Work?</h2>
+                            <img src="${project.image}" alt="${project.title}" width="500">
                         `;
                     }
                 })
@@ -63,8 +69,10 @@
     <header></header>
     <div class="container">
         <section id="intro-content"></section>
+        <section id="project-link"></section>
         <section id="features"></section>
-        <section id="pseudo-code"></section>
+        
+        <section id="flow-diagram"></section>
     </div>
 </body>
 </html>

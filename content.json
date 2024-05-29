@@ -9,6 +9,7 @@
       "title": "Epub Canvas",
       "image": "media/epubcanvas.png",
       "link": "project_template.html?id=epub_canvas",
+      "trylink": "/ebookcanvas",
       "tags": ["JavaScript"],
       "projectType": "personal",
       "upcoming": false,
